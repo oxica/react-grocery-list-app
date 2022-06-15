@@ -28,6 +28,7 @@ export const App = () => {
   return (
     <center>
       <h1>My grocery list</h1>
+
       <div>
         <input
           type="text"
@@ -36,7 +37,8 @@ export const App = () => {
         />
         <button onClick={handleAddProduct}>Add</button>
       </div>
-      <div>
+      <p>Click on the product to delete &#128071;</p>
+      {/* <div>
         <select value={count} onChange={e => setCount(e.target.value)}>
           <option value="''">all</option>
           <option value="1">1</option>
@@ -44,7 +46,7 @@ export const App = () => {
           <option value="3">3</option>
           <option value="4">4</option>
         </select>
-      </div>
+      </div> */}
       <ul>
         {data.map(item => (
           <li key={item.id} onClick={() => handleDeleteProduct(item.id)}>
