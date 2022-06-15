@@ -1,10 +1,6 @@
 {
   "goods": [
     {
-      "id": 1,
-      "name": "Bread"
-    },
-    {
       "id": 2,
       "name": "Milk"
     },
@@ -13,16 +9,8 @@
       "name": "Apple"
     },
     {
-      "id": 4,
-      "name": "Tomatoes"
-    },
-    {
-      "name": "water",
-      "id": 5
-    },
-    {
-      "name": "jogurt",
-      "id": 6
+      "name": "Water",
+      "id": 4
     }
   ]
 }
