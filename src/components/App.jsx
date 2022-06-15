@@ -1,16 +1,18 @@
+import { useGetGoodsQuery } from '../redux';
+
 export const App = () => {
+  const { data = [], isLoading } = useGetGoodsQuery();
+
+  if (isLoading) return <p>Loading...</p>;
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      grocery list
-    </div>
+    <center>
+      <h1>My grocery list</h1>
+      <ul>
+        {data.map(item => (
+          <li key={item.id}>{item.name}</li>
+        ))}
+      </ul>
+    </center>
   );
 };
