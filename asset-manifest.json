@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-grocery-list-app/static/css/main.5c804a5e.css",
-    "main.js": "/react-grocery-list-app/static/js/main.2b979514.js",
+    "main.js": "/react-grocery-list-app/static/js/main.87b21861.js",
     "index.html": "/react-grocery-list-app/index.html",
     "main.5c804a5e.css.map": "/react-grocery-list-app/static/css/main.5c804a5e.css.map",
-    "main.2b979514.js.map": "/react-grocery-list-app/static/js/main.2b979514.js.map"
+    "main.87b21861.js.map": "/react-grocery-list-app/static/js/main.87b21861.js.map"
   },
   "entrypoints": [
     "static/css/main.5c804a5e.css",
-    "static/js/main.2b979514.js"
+    "static/js/main.87b21861.js"
   ]
 }
