@@ -6,7 +6,7 @@ import {
 } from '../redux';
 
 export const App = () => {
-  const [count, setCount] = useState();
+  const [count] = useState();
   const [newProduct, setNewProduct] = useState();
   const { data = [], isLoading } = useGetGoodsQuery(count);
   const [addProduct] = useAddProductMutation();
