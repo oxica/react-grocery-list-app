@@ -7,7 +7,14 @@ export const goodsApi = createApi({
     getGoods: build.query({
       query: (limit = '') => `goods?${limit && `_limit=${limit}`}`,
     }),
+    addProduct: build.mutation({
+      query: body => ({
+        url: 'goods',
+        method: 'POST',
+        body,
+      }),
+    }),
   }),
 });
 
-export const { useGetGoodsQuery } = goodsApi;
+export const { useGetGoodsQuery, useAddProductMutation } = goodsApi;
