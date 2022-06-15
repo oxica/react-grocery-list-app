@@ -48,11 +48,15 @@ export const App = () => {
         </select>
       </div> */}
       <ul>
-        {data.map(item => (
-          <li key={item.id} onClick={() => handleDeleteProduct(item.id)}>
-            {item.name}
-          </li>
-        ))}
+        {data.length ? (
+          data.map(item => (
+            <li key={item.id} onClick={() => handleDeleteProduct(item.id)}>
+              {item.name}
+            </li>
+          ))
+        ) : (
+          <p>This list is empty</p>
+        )}
       </ul>
     </center>
   );
